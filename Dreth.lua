@@ -1,11 +1,11 @@
 Dreth = {}
 Dreth.name = "Dreth"
 
-function Dreth:Initialize()
-  -- ...but we don't have anything to initialize yet. We'll come back to this.
-end
+-- function Dreth:Initialize()
+--   -- ...but we don't have anything to initialize yet. We'll come back to this.
+-- end
 
-function Dreth.OnAddOnLoaded(event, addonName)
+function Dreth.OnAddOnLoaded(_, addonName)
   if addonName == Dreth.name then
     Dreth:Initialize()
   end
